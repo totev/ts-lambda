@@ -1,0 +1,55 @@
+{
+  "name": "private",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "test:unit": "jest",
+    "lint": "eslint . --ext .ts",
+    "build": "NODE_ENV=production webpack",
+    "prettier": "prettier --check --write \"src/**/*.ts\""
+  },
+  "keywords": [
+    "typescript",
+    "lambda",
+    "aws"
+  ],
+  "author": "",
+  "license": "ISC",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "post-merge": "npm run generate:types generate:graphql-types"
+    }
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.44",
+    "@types/node": "^13.7.6",
+    "@typescript-eslint/eslint-plugin": "^2.21.0",
+    "@typescript-eslint/parser": "^2.21.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.18.3",
+    "husky": "^4.2.3",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1",
+    "ts-loader": "^6.2.1",
+    "ts-node": "^8.6.2",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "typescript": "^3.8.2",
+    "aws-lambda": "^1.0.5"
+  }
+}
