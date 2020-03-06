@@ -2,7 +2,6 @@
 
 - TerserWebpackPlugin -> js minification with terser
 - webpack -> artifact bundling
-  -- webpack-node-externals -> exclude things from bundling
   -- webpack-cli -> well for cli execution of webpack
   -- webpack-node-externals -> exclude node_modules from bundle
   -- ts-loader -> load typescript directly in webpack
