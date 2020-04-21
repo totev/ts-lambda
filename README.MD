@@ -20,4 +20,5 @@
 ## General purpose plugins
 
 - jest -> test harness
+  -- ts-jest -> typescript support for jest
 - husky -> for git hooks
