@@ -1,3 +1,5 @@
+# ts-lambda
+
 ## Plugins required at build time
 
 - TerserWebpackPlugin -> js minification with terser
