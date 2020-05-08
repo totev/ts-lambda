@@ -23,8 +23,7 @@
   "license": "ISC",
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint",
-      "post-merge": "npm run generate:types generate:graphql-types"
+      "pre-commit": "npm run lint"
     }
   },
   "devDependencies": {
